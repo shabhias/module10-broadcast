@@ -18,3 +18,8 @@ Aplikasi akan berjalan baik seperti sebelumnya, seperti yang ditunjukkan pada ga
 
 Apabila salah satu port diubah, misalkan port client. Maka, akan terjadi kesalahan pada sisi klien karena menurut klien, port tersebut tidak terhubung dan program akan mengalami kegagalan ketika perintah cargon run --bin client dijalankan sepertipada gambar di atas.
 
+
+## 2.3 
+
+- <a href="https://ibb.co/pbftHDK"><img src="https://i.ibb.co/8NrWy3x/Screenshot-2024-05-05-193307.png" alt="Screenshot-2024-05-05-193307" border="0"></a>
+Saya merubah salah satu baris kode pada server.rs menjadi bcast_tx.send(format!("{addr} : {text}"))?;/ Perubahan dilakukan untuk memastikan bahwa ketika `bcast.tx` (yang bertindak sebagai *sender*) mengirimkan pesan kepada setiap klien, ia juga akan menyediakan alamat IP *sender* dari teks melalui variabel addr.
